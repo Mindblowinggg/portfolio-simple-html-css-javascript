@@ -3,5 +3,5 @@ lottie.loadAnimation({
   renderer: 'svg',
   loop: true,
   autoplay: true,
-  path: "/Frapp logo Lottie JSON animation.json",
+  path: "./Frapp logo Lottie JSON animation.json",
 });
