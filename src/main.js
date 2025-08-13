@@ -1,7 +1,7 @@
 lottie.loadAnimation({
-  container: document.getElementById('my-lottie-container'), // आपका div
-  renderer: 'svg',
+  container: document.getElementById("my-lottie-container"), // आपका div
+  renderer: "svg",
   loop: true,
   autoplay: true,
-  path: "public/Frapp logo Lottie JSON animation.json",
+  path: "src/Frapp logo Lottie JSON animation.json",
 });
