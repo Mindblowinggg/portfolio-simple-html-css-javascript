@@ -3,25 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js"
-      type="module"
-    ></script>
-    <link rel="stylesheet" href="/src/style.css" />
     <title>Frapp</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
+    
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
     <div class="splash-screen">
-      <div class="my-lottie-container">
-        <dotlottie-wc
-          src="https://lottie.host/6b3d3ada-e2b2-4a24-9ee4-3655a9ef939a/vYv0rT9m8w.lottie"
-          style="height: 100%;width: 100%;"
-          speed="1"
-          autoplay
-          loop
-        ></dotlottie-wc>
-      </div>
+      <div id="lottie-container"></div>
     </div>
+
     <script src="/src/main.js"></script>
   </body>
 </html>
