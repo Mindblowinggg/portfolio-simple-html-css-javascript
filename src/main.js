@@ -1,5 +1,7 @@
- gsap.from(".splash-text", {
-    clipPath: "inset(0% 100% 0% 0%)", 
-    duration: 1,
-    ease: "power2.out"
-  });
+ const splashscreen = document.querySelector(".splash-screen");
+ setTimeout(() => {
+  splashscreen.style.display ='none';
+ }, 1000);
+
+ const main= document.querySelector(".main-content");
+ main.style.display='block';

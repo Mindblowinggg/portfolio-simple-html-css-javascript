@@ -1,42 +1,155 @@
-/* Basic reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-/* Splash screen styling */
+
 .splash-screen {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #142328; /* Dark background */
+  background-color: #142328;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  color: #fff; /* White text */
+  color: #fff;
   font-family: sans-serif;
   font-size: 3em;
   font-weight: bold;
-  text-transform: uppercase;
-  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
 }
 
-/* Styling for the main content (initially hidden) */
+
 .main-content {
   display: none;
-  padding: 20px;
   font-family: sans-serif;
-  color: #fff;
-  background-color: #333;
-  min-height: 100vh;
+  color: #000000;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+
 }
 
-/* Class to hide the splash screen */
-.hidden {
-  opacity: 0;
-  visibility: hidden;
+.heading {
+  height: 10%;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0px 64px;
+  font-size: 30px;
+}
+
+.login-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  width: 80%;
+  transform: translateX(-50%);
+}
+
+.login-section h2 {
+  font-weight: 400;
+
+}
+
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: sans-serif;
+    max-width: 400px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    background-color: #f6f6f6;
+}
+
+.continue-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+.black-btn {
+    background-color: black;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    color: #888;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background-color: #5c5b5b;
+}
+
+.divider span {
+    margin: 0 10px;
+}
+
+.social-btn, .qr-btn {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #f6f6f6;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.social-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+.consent-text {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 20px;
+    text-align: center;
 }
