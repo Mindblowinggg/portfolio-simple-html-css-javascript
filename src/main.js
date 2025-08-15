@@ -1,22 +1,33 @@
-const taskinput = document.getElementById("taskinput");
-
-const addbtn = document.getElementById("addbtn");
-const tasklist = document.getElementById("tasklist");
-
-addbtn.addEventListener("click", () => {
-  const inputtext = taskinput.value;
-
-  if (inputtext !== "") {
-    const li = document.createElement("li");
-    li.textContent = inputtext;
-    const deleteButton = document.createElement("button");
-    deleteButton.textContent = "Delete";
-
-    li.appendChild(deleteButton);
-    deleteButton.addEventListener("click", () => {
-      tasklist.removeChild(li);
-    });
-    tasklist.appendChild(li);
-    taskinput.value = "";
+// Navbar scroll effect
+const navbar = document.getElementById("navbar");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
   }
 });
+
+//typing effect
+function typewriter(element, text, speed = 100) {
+  let i = 0;
+  element.innerHTML='';
+  function type() {
+    if (i < text.length) {
+      element.innerHTML += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    }
+  }
+  type();
+}
+const heroTitle = document.querySelector(".hero-text h1");
+setTimeout(() => {
+  typewriter(heroTitle, "Aman Kahar", 130);
+}, 0);
+
+const heroptext =document.querySelector(".subtitle");
+const heroTextContent = heroptext.textContent; 
+setTimeout(() => {
+  typewriter(heroptext ,heroTextContent  , 30);
+}, 0);
