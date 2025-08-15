@@ -22,8 +22,9 @@ function typewriter(element, text, speed = 100) {
   type();
 }
 const heroTitle = document.querySelector(".hero-text h1");
+const herotitletext = heroTitle.textContent;
 setTimeout(() => {
-  typewriter(heroTitle, "Aman Kahar", 130);
+  typewriter(heroTitle,herotitletext , 130);
 }, 0);
 
 const heroptext =document.querySelector(".subtitle");
