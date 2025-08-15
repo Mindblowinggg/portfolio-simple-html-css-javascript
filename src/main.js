@@ -8,6 +8,21 @@ window.addEventListener("scroll", () => {
   }
 });
 
+//navlink menu toggle for mobile screen
+
+const menubtn = document.getElementById('menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menubtn.addEventListener('click' , ()=>{
+  navLinks.classList.toggle('active');
+});
+
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click',()=> {
+    navLinks.classList.remove('active');
+  });
+});
+
 //typing effect
 function typewriter(element, text, speed = 100) {
   let i = 0;
