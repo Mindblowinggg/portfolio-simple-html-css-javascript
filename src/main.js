@@ -21,6 +21,8 @@ function typewriter(element, text, speed = 100) {
   }
   type();
 }
+
+
 const heroTitle = document.querySelector(".hero-text h1");
 const herotitletext = heroTitle.textContent;
 setTimeout(() => {

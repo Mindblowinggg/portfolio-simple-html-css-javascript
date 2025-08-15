@@ -11,6 +11,24 @@
     --dark-mode-text: #e5e7eb;
 }
 
+
+/* Blinking cursor animation */
+.blinking-cursor {
+    font-weight: 100;
+    font-size: 1.2em; 
+    color: #000000; 
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        color: transparent;
+    }
+    50% {
+        color: #000000; 
+    }
+}
+
 /* Base Styles */
 * {
     margin: 0;
