@@ -330,6 +330,7 @@ nav.scrolled {
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .qual-card:hover {
@@ -360,6 +361,21 @@ nav.scrolled {
     font-size: 0.9rem;
     margin-bottom: 1rem;
 }
+
+.qual-card a , p{
+    margin-top: 20px;
+    color: #059669;
+    text-decoration: none;
+    &:hover{
+        color: #000000;
+    }
+}
+
+
+
+
+
+
 
 /* Skills Section */
 .skills {
@@ -564,6 +580,7 @@ nav.scrolled {
     align-items: center;
     gap: 1rem;
     margin-bottom: 1.5rem;
+    margin-top: 2rem;
 }
 
 .contact-item i {
